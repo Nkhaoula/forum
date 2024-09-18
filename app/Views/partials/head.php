@@ -9,34 +9,30 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-  <a class="navbar-brand" href="#">
-      <img src="/public/img/logo.png" alt="Logo le Poles" width="30" height="30" class="d-inline-block align-text-top">
-      FORUM
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">a</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">a</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">a</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">a</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">a</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="myBody">
+    <header class="navbar-fixed">
+        <nav class="navbar-container">
+            <div class="flexLogo">
+                <div class="logo">
+                    <img src="/public/img/logo-education-education-2g1620k.jpg" alt="Logo Chat">
+                    <h1>FORUM</h1>
+                </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Icône burger -->
+            </div>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="enseignants.php">Enseignants</a></li>
+                <li><a href="apprenants.php">Apprenants</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- JavaScript pour activer le burger menu -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('header ul');
+            navMenu.classList.toggle('show'); /* Ajoute ou retire la classe "show" */
+        }
+    </script>
