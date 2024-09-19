@@ -75,7 +75,7 @@ header ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 0.6em;
     margin-right: 1.5em;
     flex-direction: row;
 }
