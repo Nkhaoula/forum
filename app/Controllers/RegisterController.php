@@ -53,3 +53,4 @@ if(isset($_POST['pseudo'])){
 }
 
 require_once(__DIR__ . '/../Views/security/register.view.php');
+

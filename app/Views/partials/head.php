@@ -25,6 +25,7 @@
                 <li><a href="/">Apprenants</a></li>
                 <li><a href="/">Contact</a></li>
                 <li><a href="/register">Inscription</a></li>
+                <li><a href="/connection">Connexion</a></li>
             </ul>
             </div>
         </nav>

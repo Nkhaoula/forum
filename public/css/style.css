@@ -101,5 +101,9 @@ nav ul a:hover {
     cursor: pointer;
     margin-right: 1em;
 }
+.colorPurpel{
+    background-color: #6299a8;
+    color: white;
+}
 
 
