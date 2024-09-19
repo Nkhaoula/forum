@@ -13,17 +13,18 @@
         <nav class="navbar-container">
             <div class="flexLogo">
                 <div class="logo">
-                    <img src="/public/img/logo-education-education-2g1620k.jpg" alt="Logo Chat">
+                    <img src="/public/img/logo-education-education-2g1620k.jpg" alt="Logo education">
                     <h1>FORUM</h1>
                 </div>
             <div class="burger-menu" onclick="toggleMenu()">
                 &#9776; <!-- Icône burger -->
             </div>
             <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="enseignants.php">Enseignants</a></li>
-                <li><a href="apprenants.php">Apprenants</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/">Enseignants</a></li>
+                <li><a href="/">Apprenants</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/register">Inscription</a></li>
             </ul>
             </div>
         </nav>
