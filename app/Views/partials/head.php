@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
+
 <body>
     <header class="navbar-fixed">
         <nav class="navbar-container">
@@ -16,22 +18,32 @@
                     <img src="/public/img/logo-education-education-2g1620k.jpg" alt="Logo education">
                     <h1>FORUM</h1>
                 </div>
-            <div class="burger-menu" onclick="toggleMenu()">
-                &#9776; <!-- Icône burger -->
-            </div>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/">Enseignants</a></li>
-                <li><a href="/">Apprenants</a></li>
-                <li><a href="/">Contact</a></li>
-                <li><a href="/register">Inscription</a></li>
-                <li><a href="/connection">Connexion</a></li>
-                <li><a href="/deconnection">Déconnexion</a></li>
-                <li><a href="/users">Utilisateurs</a></li>
-            </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    &#9776; <!-- Icône burger -->
+                </div>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <?php
+                    if (isset($_SESSION['user'])) {
+                    ?>
+                        <li><a href="/deconnection">Déconnexion</a></li>
+                        <?php
+                        if ($_SESSION['user']['role'] == "Admin") {
+                        ?>
+                            <li><a href="/users">Utilisateurs</a></li>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <li><a href="/register">Inscription</a></li>
+                        <li><a href="/connection">Connexion</a></li>
+                    <?php
+                    }
+                    ?>
+                </ul>
             </div>
         </nav>
-    </header> 
+    </header>
 
     <!-- JavaScript pour activer le burger menu -->
     <script>
