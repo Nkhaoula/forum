@@ -26,6 +26,8 @@
                 <li><a href="/">Contact</a></li>
                 <li><a href="/register">Inscription</a></li>
                 <li><a href="/connection">Connexion</a></li>
+                <li><a href="/deconnection">Déconnexion</a></li>
+                <li><a href="/users">Utilisateurs</a></li>
             </ul>
             </div>
         </nav>
