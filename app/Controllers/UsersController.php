@@ -14,10 +14,8 @@ if($_SESSION['user']['role'] != "Admin"){
 
     $admins = getUsersRole(2);
     $users = getUsersRole(1);
-    
 
     require_once (__DIR__ . '/../Views/users.view.php');
 }
-
 
 

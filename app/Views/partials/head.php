@@ -37,7 +37,7 @@
                         ?>
                         <li><a href="/register">Inscription</a></li>
                         <li><a href="/connection">Connexion</a></li>
-                    <?php
+                        <?php
                     }
                     ?>
                 </ul>
