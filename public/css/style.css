@@ -8,8 +8,12 @@
 body {
     min-height: 100vh; /* Le body occupe 100% de la hauteur de la fenêtre */
     padding-top: 130px; /* Espace sous la navbar pour éviter qu'elle couvre le contenu */
-    background-color: #f5f5f5; /* Arrière-plan pour mieux différencier les sections */
+    background-color: #b19f9f; /* Arrière-plan pour mieux différencier les sections */
+    text-align: center;
    
+}
+h1{
+    text-align: center;
 }
 
 header h1:hover {
@@ -111,6 +115,10 @@ nav ul a:hover {
 }
 .card-body{
     background-color: #dfe9ec;
+}
+
+.mb-3{
+    text-align: center;
 }
 
 
