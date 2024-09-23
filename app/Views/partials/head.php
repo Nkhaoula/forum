@@ -31,6 +31,7 @@
                         if ($_SESSION['user']['role'] == "Admin") {
                         ?>
                             <li><a href="/users">Utilisateurs</a></li>
+                            <li><a href="/subject">Ajout sujet</a></li>
                         <?php
                         }
                     } else {
